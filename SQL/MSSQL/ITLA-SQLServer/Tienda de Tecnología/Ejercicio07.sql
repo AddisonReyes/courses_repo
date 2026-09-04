@@ -1,4 +1,5 @@
 USE tienda_tecnologia_db;
+GO
 
 CREATE INDEX idx_producto_codigo
 ON productos(codigo);

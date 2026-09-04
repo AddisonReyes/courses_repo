@@ -1,6 +1,8 @@
 CREATE DATABASE tienda_tecnologia_db;
-USE tienda_tecnologia_db;
+GO
 
+USE tienda_tecnologia_db;
+GO
 
 /* =========================================================
    CLIENTES
