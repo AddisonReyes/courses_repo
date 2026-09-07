@@ -1,0 +1,16 @@
+USE DBA_LAB_CORE; 
+GO
+
+CREATE TABLE dbo.JobHeartbeat ( 
+	HeartbeatID BIGINT IDENTITY(1,1) PRIMARY KEY, 
+	Fecha DATETIME2 NOT NULL DEFAULT SYSDATETIME(), 
+	Mensaje NVARCHAR(100) NOT NULL 
+); 
+
+---
+
+SELECT * FROM dbo.JobHeartbeat
+
+SELECT TOP (20) * 
+FROM dbo.JobHeartbeat 
+ORDER BY HeartbeatID DESC; 
